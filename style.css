@@ -37,28 +37,24 @@ a {
 } */
 
 header {
-    background-color: #CED3DC;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 55px;
-    padding: 12px;
-    padding-left: 24px;
-    padding-right: 24px;
+    background-color: #CED3DC;    
 }
 
 .logoImg {
-    width: 35px;
+    width: 40px;
     
 }
 
-.navbar {
+nav {
     display: flex;
-    
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
 }
 
-.navbarNav {
-    padding: 5px;
+ul {
+    display: flex;
+    gap: 10px;
 }
 
 a {
