@@ -7,13 +7,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>E2 - Navbar</title>
 </head>
 <body>
     <header>
         <img class="logoImg" src="./assets/logo.png" alt="logo">
         <nav class="navbar">
-            <ul>
+            <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu"/>
+
+            <ul class="navbar-list">
                 <li class="navbarNav selected"><a href="#"><b>Inicio</b></a></li>
                 <li class="navbarNav"><a href="#">Servicios</a></li>
                 <li class="navbarNav"><a href="#">Acerca De</a></li>
@@ -39,5 +43,91 @@
     <section class="about">
         <p class="paragraphs">En Tecnodromo, nos dedicamos apasionadamente a la creación de soluciones tecnológicas vanguardistas que impulsan el progreso y enriquecen la vida cotidiana. Con un compromiso inquebrantable con la innovación, nuestro equipo está enfocado en proporcionar productos y servicios de primera categoría que transforman la manera en que interactuamos con la tecnología.</p>
     </section>
+    <section class="cards">
+        <div class="cards-presentation">
+            <h2>Nuestras Beneficios</h2>
+            <p>Acá te contamos todos los beneficios que tenemos para ofrecerte</p>
+        </div>
+        <div class="cards-info">
+            <div class="cards-info-details">
+                <div class="icon">
+                    <i class="fa-solid fa-check fa-4x"></i>
+                </div>
+                <h3>Calidad</h3>
+                <div class="details">
+                    <p>Somos una empresa con los mejores profesionales de la industria, por lo que nuestros productos son los mejores del mercado.</p>
+                </div>
+            </div>
+            <div class="cards-info-details">
+                <div class="icon">
+                    <i class="fa-regular fa-heart fa-4x"></i>
+                </div>
+                <h3>Eficiencia</h3>
+                <div class="details">
+                    <p>Somos una empresa con los mejores profesionales de la industria, por lo que nuestros productos son los mejores del mercado.</p>
+                </div>
+            </div>
+            <div class="cards-info-details">
+                <div class="icon"><i class="fa-regular fa-life-ring fa-4x"></i></div>
+                <h3>Seguridad</h3>
+                <div class="details">
+                    <p>Somos una empresa con los mejores profesionales de la industria, por lo que nuestros productos son los mejores del mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contact">
+            <div class="titulo">
+                <h2>Contacto</h2>
+            </div>
+            <div class="contact-details">
+                <div class="contact-details1">
+                    <h3>Florencia, Gonzalez</h3>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Calle falsa 123</p>
+
+                    </div>
+                    <div class="mail">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>tecnodromoflor@contacto.com</p>
+                    </div>
+                    <div class="telephone">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>369 258 147</p>
+                    </div>
+                </div>
+                <div class="contact-details2">
+                    <h3>Esteban Quito</h3>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Calle falsa 456</p>
+
+                    </div>
+                    <div class="mail">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>tecnodromosteve@contacto.com</p>
+                    </div>
+                    <div class="telephone">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>159 753 742</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-icon">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </div>
+        </div>
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13627.738897748339!2d-64.22198715311325!3d-31.360780465607544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299116b458825%3A0xe27d965cbb405561!2sPoeta%20Lugones%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1702655265984!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <hr class="hr">
+    <div class="footer2">
+        <img src="./assets/logo.png" alt="">
+    </div>
 </body>
 </html>
