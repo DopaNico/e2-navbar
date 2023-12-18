@@ -21,13 +21,13 @@
 
 header {
     background-color: var(--transparent-bg);    
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
     align-items: center;
-    padding: 0 30px 0 30px;
     position: fixed;
     top: 0;
+    width: 100%;
 }
 
 .logoImg {
@@ -40,7 +40,6 @@ header {
     justify-content: center;
     align-items: center;
     gap: 150px;
-    padding: 2rem;
 }
 
 .navbar ul {
@@ -85,7 +84,7 @@ body {
     align-items: center;
     margin-top: 50px;
     padding: 70px 0;
-    max-width: 1200px;
+    max-width: 1500px;
     
 }
 
@@ -95,6 +94,7 @@ body {
     flex-direction: column;
     gap: 50px;
     width: 50%;
+    padding: 70px 70px;
 }
 
 .hero-section h1 {
@@ -173,6 +173,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .cards-presentation {
@@ -181,6 +182,18 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    color: var(--text-white);
+}
+
+.cards-presentation h2 {
+    font-family: "Roboto Condensed";
+    font-size: 46px;
+}
+
+.cards-presentation p {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    color: var(--text-white);
 }
 
 .cards-info {
@@ -195,12 +208,18 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    color: var(--text-white);
 }
 
 .cards-info-details h3 {
     margin-top: 15px;
     font-family: "Roboto Condensed";
     font-size: 42px;
+    
+}
+
+.cards-info-details p {
+    color: var(--text-white);
 }
 
 .details {
@@ -211,6 +230,10 @@ body {
 .details p {
     font-family: "Roboto Condensed";
     font-size: 16px;
+}
+
+.icon i {
+    color: var(--text-white);
 }
 
 /* Footer Section */
@@ -225,8 +248,7 @@ footer {
 
 .titulo {
     display: flex;
-    padding: 0 35px;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .contact {
@@ -272,10 +294,6 @@ iframe {
     width: 500px;
 }
 
-.hr {
-    color: #000046;
-    border: 2px solid;
-}
 .footer2 {
     display: flex;
     justify-content: center;
@@ -285,6 +303,94 @@ iframe {
 
 .footer2 img {
     width: 60px;
+}
+
+
+
+@media(max-width: 992px) {
+    header {
+        width: 992px;
+    }
+
+    .navbar ul {
+        height: calc(100vh - 100px);
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        background-color: var(--transparent-bg);
+        
+    }
+
+    .navbar i {
+        display: block;
+    }
+
+    #toggle-menu:checked ~ .navbar-list {
+        display: flex;
+        
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-section {
+        max-width: 500px;
+        align-items: center;
+    }
+
+    .hero-section p,
+    .hero-section h1 {
+        text-align: center;
+    }
+
+    .about {
+        max-width: 500px;
+        flex-direction: column;
+        margin: 70px 0px 50px 250px;
+    }
+
+    .paragraphs {
+        width: 30%;
+        gap: 50px;
+    }
+
+    .cards-info {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo {
+        justify-content: center;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-icon {
+        justify-content: center;
+    }
+
+    .maps {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-details1, 
+    .contact-details2 {
+        align-items: center;
+    }
 }
 
 
