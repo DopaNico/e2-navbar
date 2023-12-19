@@ -35,13 +35,6 @@ header {
     
 }
 
-.navbar  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
-}
-
 .navbar ul {
     display: flex;
     gap: 100px;
@@ -309,6 +302,11 @@ iframe {
 
 .footer2 img {
     width: 60px;
+}
+
+.icon-footer {
+    display: flex;
+    justify-content: center;
 }
 
 
