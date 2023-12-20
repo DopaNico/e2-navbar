@@ -205,7 +205,7 @@ body {
 .cards-info {
     display: flex;  
     gap: 30px;
-    padding: 70px;
+    padding: 70px 0px 0px 105px;
 }
 
 .cards-info-details {
@@ -330,7 +330,7 @@ iframe {
     }
 
     .navbar ul {
-        height: calc(100vh - 100px);
+        /* height: calc(100vh - 100px); */
         width: 90%;
         position: absolute;
         top: 80px;
@@ -342,8 +342,8 @@ iframe {
         border: 2px solid white;
         border-top: none;
         border-radius: 0px 0px 20px 20px;
-        background: rgb(71 115 165);
-        
+        background: rgb(20 70 127);
+        padding: 20px;
     }
 
     .navbar i {
@@ -367,6 +367,7 @@ iframe {
     .hero-section p,
     .hero-section h1 {
         text-align: center;
+        width: 300px;
     }
 
     .about {
@@ -375,10 +376,11 @@ iframe {
         /* margin: 70px 0px 50px 250px; */
     }
 
-    .paragraphs {
-        width: 30%;
-        gap: 50px;
+    .cards-info {
+        padding: 70px;
     }
+
+
 
     .cards-info {
         flex-direction: column;
@@ -425,6 +427,10 @@ iframe {
         width: 80%;
     }
 
+    .cards-info {
+        padding: 70px;
+    }
+
 }
 
 
@@ -449,7 +455,12 @@ iframe {
     }
 
     .paragraphs {
-        width: 250px;
+        width: 300px;
+        padding: 30px;
+    }
+
+    .cards-info {
+        padding: 70px;
     }
 }
 
