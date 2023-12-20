@@ -367,7 +367,7 @@ iframe {
     .hero-section p,
     .hero-section h1 {
         text-align: center;
-        width: 300px;
+        width: 500px;
     }
 
     .about {
@@ -417,7 +417,11 @@ iframe {
 
 @media(max-width: 768px) {
 
-    
+    .hero-section p,
+    .hero-section h1 {
+        text-align: center;
+        width: 250px;
+    }
 
     .hero-section p {
         width: 250px;
