@@ -16,6 +16,7 @@
     --text-gray: #94a1b2;
     --text-white: #fff;
     --transparent-bg: rgba(241, 196, 196, 0.322);
+    --navbar-color: rgb(25, 48, 73);
 }
 
 
@@ -44,13 +45,18 @@ header {
     color: var(--text-white);
 }
 
+
 .navbar-list {
     gap: 30px;
 }
 
 a {
     font-family: 'Roboto Condensed', sans-serif; 
-    color: var(--primary);   
+    color: var(--text-white);   
+}
+
+a:hover {
+    font-weight: 800;
 }
 
 .navbar i {
@@ -83,7 +89,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 70px 0;
     max-width: 1500px;
     
@@ -143,8 +149,9 @@ body {
     color: var(--primary);
 }
 
-.hr {
-    border: 1px solid var(--transparent-bg);
+.btn--primary:hover {
+    color: var(--text-white);
+    border: 3px solid var(--text-white);
 }
 
 .about {
